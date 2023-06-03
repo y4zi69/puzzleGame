@@ -21,9 +21,33 @@
     <section>
         <div class="gameSection">
             <div id="board"></div>
-            <div id="pieces-grid"></div>
-            <button id="start">Start</button>
-            <button id="reset" onClick="window.location.reload();">Reset</button>
+           <div class="hint">
+                            <!-- Button trigger modal -->
+                <button type="button" class="btn bg-warning hint-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    !
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bg-dark">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Hint</h1>
+                        <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="images/Screenshot 2023-06-04 013641.png" alt="Reload Page">
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+           </div>
+        <div id="pieces-grid"></div>
+        <button id="start" class="start-btn">Start</button>
+        <button id="reset" onClick="window.location.reload();">Reset</button>
         </div>
         
     </section>
